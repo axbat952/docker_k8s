@@ -1,8 +1,17 @@
 FROM nginx:latest
 
+
 COPY index.html /usr/share/nginx/html
 
 #COPY nginx.conf /etc/nginx/nginx.conf
 
-EXPOSE 80:80
+VOLUME [ "/data" ]
 
+WORKDIR /data
+
+#COPY volume/file1.txt .
+#COPY volume/file2.txt .
+
+EXPOSE 80
+
+LABEL description="Ajout des volumes"

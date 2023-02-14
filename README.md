@@ -14,6 +14,10 @@ docker run -it -p 8080:8080 <tag de l'image > /bin/bash (démarrage du container
 
 docker run -it -p 8080:8080 <tag de l'image > /bin/sh -c "ls -l && pwd && ls -l /usr/src/app" 
 
+docker run -v <répertoire source> :<répertoire destination> <tag de l'image > (démarrage du container avec un répertoire partagé)
+
+docker run -v ${PWD}:/usr/share/nginx/html -d -p 8880:80 axbat952/nginx_esiee:v5 (démarrage du container avec un répertoire partagé)
+
 docker tag nginx_perso axbat952/nginx_esiee:v1 (tag de l'image)
 
 docker push <tag de l'image > (envoi de l'image sur le hub)
