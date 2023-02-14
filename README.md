@@ -1,6 +1,8 @@
 # docker_k8s
 ESIEE-IT
 
+# ip Docker
+172.18.112.1
 
 # Docker commandes
 
