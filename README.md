@@ -26,6 +26,10 @@ Expose : <port>
 
 Workdir : <répertoire de travail> (équivalent cd <répertoire de travail>)
 
+Entrypoint : <commande à exécuter>
+
+Cmd : <commande à exécuter>
+
 
 # Docker-compose commandes
 
